@@ -2,10 +2,28 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="container">
+      <header>
+        <h1 class="home-title"><%= title %></h1>
+        <a class="nav-link" href="/new">New message</a>
+      </header>
+
+      <div class="messages-container">
+        <% messages.forEach(message => { %>
+          <div class="message-box">
+            <p class="message-label">From:</p>
+            <p class="message-content"><%= message.user %></p>
+            <p class="message-label">Text:</p> 
+            <p class="message-content"><%= message.text %></p>
+            <p class="message-label">Date:</p> 
+            <p class="message-content"><%= message.added.toDateString() %></p>
+          </div>
+        <% }) %>
+      </div>
+    </div>
   </body>
 </html>

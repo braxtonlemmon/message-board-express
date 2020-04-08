@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="home-title"><%= title %></h1>
+      <a class="nav-link" href="/new">New message</a>
+    </header>
+
+    <form method="POST" action="/new">
+      <h2>New Message</h2>
+      <input class="input-field" type="text" id="name" name="name" placeholder="Name" />
+      <!-- <input class="input-field input-message" type="textarea" id="message" name="message" placeholder="Message" /> -->
+      <textarea class="input-field input-message" id="message" name="message" placeholder="Message"></textarea>
+      <div class="form-buttons">
+        <input class="nav-link" type="submit">
+        <a class="nav-link" href="/">Home</a>
+      </div>
+     </form>  
+</body>
+
+</html>
