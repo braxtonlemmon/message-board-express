@@ -7,10 +7,12 @@ Project based on The Odin Project [curriculum](https://www.theodinproject.com/co
 - Implement the correct methods in the routers.
 
 # To run
-```$ git clone git@github.com:braxtonlemmon/message-board-express.git```  
-```$ cd message-board-express```  
-```$ npm install```  
-```$ npm run serverstart```  
+```
+$ git clone git@github.com:braxtonlemmon/message-board-express.git 
+$ cd message-board-express 
+$ npm install 
+$ npm run serverstart
+```
   
 In your browser, navigate to ```http://localhost:3000```.
 
